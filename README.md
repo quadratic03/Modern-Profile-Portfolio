@@ -1,5 +1,5 @@
 # Dark Neon Portfolio Template
-# Please Contact the Maker to avoid Copy right
+# Please Contact the Maker to remove the footer and to avoid Copy right - Namoc
 A modern, responsive portfolio template with a dark theme and glowing neon accents. This template features an eye-catching design with animated elements, perfect for developers, designers, and creative professionals.
 
 ![Portfolio Preview](img/preview.png)
