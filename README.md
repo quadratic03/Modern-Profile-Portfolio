@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio template with a dark theme and glowing neon accents. This template features an eye-catching design with animated elements, perfect for developers, designers, and creative professionals.
 
-![Portfolio Preview](img/preview.jpg)
+![Portfolio Preview](img/preview.png)
 
 ## 🌟 Features
 
