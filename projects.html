@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Your Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">YourName</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-primary">Hire Me</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Explore my latest work and creative solutions</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter System -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-search">
+                <input type="text" id="project-search" placeholder="Search projects...">
+                <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-categories">
+                <button class="filter-btn active" data-filter="all">All Projects <span class="count">(9)</span></button>
+                <button class="filter-btn" data-filter="web">Web Development <span class="count">(4)</span></button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design <span class="count">(3)</span></button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps <span class="count">(2)</span></button>
+            </div>
+            <div class="filter-sort">
+                <label for="sort-projects">Sort By:</label>
+                <select id="sort-projects">
+                    <option value="latest">Latest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="web" id="project1">
+                    <div class="project-img">
+                        <img src="img/projects/project1.jpg" alt="E-Commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project1"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with payment integration.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item" data-category="ui" id="project2">
+                    <div class="project-img">
+                        <img src="img/projects/project2.jpg" alt="Portfolio Design">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project2"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Design</h3>
+                        <p>Modern portfolio website with interactive elements.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" data-category="ui" id="project3">
+                    <div class="project-img">
+                        <img src="img/projects/project3.jpg" alt="Mobile App UI">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project3"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile App UI</h3>
+                        <p>UI/UX design for a fitness tracking mobile application.</p>
+                        <div class="tech-stack">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="img/projects/project4.jpg" alt="Business Website">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project4"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Website</h3>
+                        <p>Corporate website with blog and contact form.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item" data-category="mobile">
+                    <div class="project-img">
+                        <img src="img/projects/project5.jpg" alt="Delivery App">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project5"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Delivery App</h3>
+                        <p>Mobile application for food delivery service.</p>
+                        <div class="tech-stack">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="img/projects/project6.jpg" alt="Dashboard UI">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project6"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard UI</h3>
+                        <p>Admin dashboard with data visualization.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-item" data-category="ui">
+                    <div class="project-img">
+                        <img src="img/projects/project7.jpg" alt="Landing Page Design">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project7"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Landing Page Design</h3>
+                        <p>Conversion-focused landing page for product launch.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-item" data-category="mobile">
+                    <div class="project-img">
+                        <img src="img/projects/project8.jpg" alt="Social Media App">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project8"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Media App</h3>
+                        <p>Mobile app for community building and sharing.</p>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="img/projects/project9.jpg" alt="Educational Platform">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="view-details" data-project="project9"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Educational Platform</h3>
+                        <p>Online learning platform with course management.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button id="load-more-btn" class="btn-secondary">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <div class="gallery-main">
+                        <img src="img/projects/project1-detail.jpg" alt="Project Detail" id="modal-main-img">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="img/projects/project1-detail.jpg" alt="Thumbnail 1" class="thumb active">
+                        <img src="img/projects/project1-detail2.jpg" alt="Thumbnail 2" class="thumb">
+                        <img src="img/projects/project1-detail3.jpg" alt="Thumbnail 3" class="thumb">
+                        <img src="img/projects/project1-detail4.jpg" alt="Thumbnail 4" class="thumb">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h2 id="modal-title">E-Commerce Website</h2>
+                    <p id="modal-description">A fully responsive e-commerce platform built with React and integrated with a payment gateway. The website features product filtering, user authentication, shopping cart functionality, and order management.</p>
+                    
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <h4>Client</h4>
+                            <p id="modal-client">FashionRetail Inc.</p>
+                        </div>
+                        <div class="meta-item">
+                            <h4>Date</h4>
+                            <p id="modal-date">March 2023</p>
+                        </div>
+                        <div class="meta-item">
+                            <h4>Category</h4>
+                            <p id="modal-category">Web Development</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Technical Specifications</h3>
+                    <ul class="tech-specs" id="modal-tech-specs">
+                        <li>React.js frontend with Redux for state management</li>
+                        <li>Node.js backend with Express.js</li>
+                        <li>MongoDB database for product and user information</li>
+                        <li>Stripe payment integration</li>
+                        <li>Responsive design with CSS Grid and Flexbox</li>
+                        <li>User authentication and authorization</li>
+                    </ul>
+                    
+                    <h3>Development Process</h3>
+                    <p id="modal-process">The project was developed using an agile methodology with two-week sprints. I started with wireframing and UI design in Figma, followed by frontend development in React. The backend API was developed with Node.js and Express, with MongoDB for data storage. The final phase involved integrating the payment system and extensive testing.</p>
+                    
+                    <div class="project-actions">
+                        <a href="#" class="btn-primary" id="modal-live-link">View Live Site</a>
+                        <a href="#" class="btn-secondary" id="modal-github-link">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>I'm a passionate web developer and designer dedicated to creating beautiful, functional websites and applications.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates about new projects and blog posts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Your Name. All Rights Reserved.</p>
+                <p class="developer-credit">Developed by Namoc</p>
+                <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Your Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">YourName</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-primary">Hire Me</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Blog & Articles</h1>
+            <p>Insights, tutorials, and thoughts on web development and design</p>
+        </div>
+    </section>
+
+    <!-- Blog Filter -->
+    <section class="blog-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search articles...">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="web-dev">Web Development</button>
+                    <button class="filter-btn" data-category="ui-ux">UI/UX Design</button>
+                    <button class="filter-btn" data-category="mobile">Mobile Development</button>
+                    <button class="filter-btn" data-category="career">Career Tips</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="img/blog/featured-article.jpg" alt="Featured Article">
+                    <div class="category-tag">UI/UX Design</div>
+                </div>
+                <div class="featured-content">
+                    <div class="meta-info">
+                        <span class="publish-date"><i class="far fa-calendar-alt"></i> August 15, 2023</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <h2>How to Create Effective User Experiences for E-commerce Platforms</h2>
+                    <p>In today's competitive digital marketplace, creating intuitive and engaging user experiences for e-commerce platforms is essential for conversion and customer retention. This article explores best practices, common pitfalls, and innovative techniques to optimize your e-commerce UX design.</p>
+                    <div class="article-tags">
+                        <span>E-commerce</span>
+                        <span>UX Design</span>
+                        <span>Conversion</span>
+                        <span>User Testing</span>
+                    </div>
+                    <a href="blog-post.html" class="btn-secondary">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="blog-articles">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            
+            <div class="masonry-grid">
+                <!-- Article 1 -->
+                <div class="article-card" data-category="web-dev">
+                    <div class="article-img">
+                        <img src="img/blog/article1.jpg" alt="JavaScript Tips">
+                        <div class="category-tag">Web Development</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> July 28, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>10 JavaScript Performance Tips You Should Know</h3>
+                        <p>Optimize your JavaScript code with these powerful performance techniques that will make your applications faster and more efficient.</p>
+                        <div class="article-tags">
+                            <span>JavaScript</span>
+                            <span>Performance</span>
+                            <span>Web Development</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="article-card" data-category="ui-ux">
+                    <div class="article-img">
+                        <img src="img/blog/article2.jpg" alt="Design Systems">
+                        <div class="category-tag">UI/UX Design</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> July 15, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Building a Scalable Design System from Scratch</h3>
+                        <p>Learn how to create a comprehensive design system that will streamline your workflow and maintain consistency across your projects.</p>
+                        <div class="article-tags">
+                            <span>Design Systems</span>
+                            <span>UI Components</span>
+                            <span>Figma</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="article-card" data-category="mobile">
+                    <div class="article-img">
+                        <img src="img/blog/article3.jpg" alt="React Native">
+                        <div class="category-tag">Mobile Development</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> June 30, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>React Native vs. Flutter: Which One Should You Choose?</h3>
+                        <p>A detailed comparison of the two most popular cross-platform mobile development frameworks to help you make an informed decision for your next project.</p>
+                        <div class="article-tags">
+                            <span>React Native</span>
+                            <span>Flutter</span>
+                            <span>Mobile Development</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 4 -->
+                <div class="article-card" data-category="web-dev">
+                    <div class="article-img">
+                        <img src="img/blog/article4.jpg" alt="CSS Grid">
+                        <div class="category-tag">Web Development</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> June 15, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3>Mastering CSS Grid: Building Complex Layouts with Ease</h3>
+                        <p>Dive into the power of CSS Grid and learn how to create complex layouts that were previously impossible or required hacky solutions.</p>
+                        <div class="article-tags">
+                            <span>CSS</span>
+                            <span>Grid Layout</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 5 -->
+                <div class="article-card" data-category="career">
+                    <div class="article-img">
+                        <img src="img/blog/article5.jpg" alt="Remote Work">
+                        <div class="category-tag">Career Tips</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> June 1, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>How to Stay Productive as a Remote Developer</h3>
+                        <p>Practical strategies and tools for maintaining productivity and work-life balance when working remotely as a developer.</p>
+                        <div class="article-tags">
+                            <span>Remote Work</span>
+                            <span>Productivity</span>
+                            <span>Work-Life Balance</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 6 -->
+                <div class="article-card" data-category="ui-ux">
+                    <div class="article-img">
+                        <img src="img/blog/article6.jpg" alt="Color Theory">
+                        <div class="category-tag">UI/UX Design</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> May 20, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Color Theory in Web Design: Creating Effective Color Schemes</h3>
+                        <p>Learn the principles of color theory and how to apply them to create visually appealing and psychologically effective web designs.</p>
+                        <div class="article-tags">
+                            <span>Color Theory</span>
+                            <span>Web Design</span>
+                            <span>Visual Hierarchy</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 7 -->
+                <div class="article-card" data-category="web-dev">
+                    <div class="article-img">
+                        <img src="img/blog/article7.jpg" alt="API Development">
+                        <div class="category-tag">Web Development</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> May 10, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>Building RESTful APIs with Node.js and Express</h3>
+                        <p>A step-by-step guide to creating robust and scalable RESTful APIs using Node.js and Express with best practices for authentication and error handling.</p>
+                        <div class="article-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>API Design</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 8 -->
+                <div class="article-card" data-category="mobile">
+                    <div class="article-img">
+                        <img src="img/blog/article8.jpg" alt="Mobile UX">
+                        <div class="category-tag">Mobile Development</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> April 28, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Mobile UX: Designing for Touch and Gestures</h3>
+                        <p>Essential guidelines for designing intuitive mobile interfaces that leverage touch gestures for a seamless user experience.</p>
+                        <div class="article-tags">
+                            <span>Mobile UX</span>
+                            <span>Gesture Design</span>
+                            <span>Touch Interfaces</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 9 -->
+                <div class="article-card" data-category="career">
+                    <div class="article-img">
+                        <img src="img/blog/article9.jpg" alt="Portfolio Tips">
+                        <div class="category-tag">Career Tips</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="meta-info">
+                            <span class="publish-date"><i class="far fa-calendar-alt"></i> April 15, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Building a Developer Portfolio That Gets You Hired</h3>
+                        <p>Practical tips for creating a standout developer portfolio that showcases your skills and attracts potential employers or clients.</p>
+                        <div class="article-tags">
+                            <span>Portfolio</span>
+                            <span>Career Advice</span>
+                            <span>Job Hunting</span>
+                        </div>
+                        <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button id="load-more-btn" class="btn-secondary">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h2>Subscribe to My Newsletter</h2>
+                    <p>Get my latest articles, tutorials, and news directly in your inbox. I never spam and you can unsubscribe at any time.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>I'm a passionate web developer and designer dedicated to creating beautiful, functional websites and applications.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates about new projects and blog posts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Your Name. All Rights Reserved.</p>
+                <p class="developer-credit">Developed by Namoc</p>
+                <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
